@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column">
+            <div class="card featuresCard hotelsCard" onclick="display('sectionHotelsBooking')">
+                <h1>Hotels</h1>
+            </div>
+            <div class="card featuresCard flightsCard" onclick="display('sectionFlightsBooking')">
+                <h1>Flights</h1>
+            </div>
+        </div>
+    </div>
+    <div id="sectionHotelsBooking">
+        <div class="places-bg-container">
+            <h1 class="package-heading">Available Packages</h1>
+            <div class="package-card-container d-flex flex-row" onclick="display('sectionMiniPackage')">
+                <div>
+                    <h1 class="package-card-heading">Mini Package</h1>
+                    <p class="favourite-place-card-description">
+                        2 Days & 3 Nights
+                    </p>
+                </div>
+            </div>
+            <div class="package-card-container d-flex flex-row" onclick="display('sectionMediumPackage')">
+                <div>
+                    <h1 class="package-card-heading">Medium Package</h1>
+                    <p class="favourite-place-card-description">
+                        7 Nights & 6 Days
+                    </p>
+                </div>
+            </div>
+            <div class="package-card-container d-flex flex-row" onclick="display('sectionLargePackage')">
+                <div>
+                    <h1 class="package-card-heading">Large Package</h1>
+                    <p class="favourite-place-card-description">
+                        7 Nights & 6 Days
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+        </div>
+    </div>
+    <div id="sectionMiniPackage">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Package Description</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Mini Package</h1>
+                    <p class="detailed-view-card-description">
+                        Planning a small tour with your friends then this package is for you, be it with family or
+                        with friends we have it all convered.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHotelsBooking')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionMediumPackage">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Package Description</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Medium Package</h1>
+                    <p class="detailed-view-card-description">
+                        On a temporary leave and decide to move out and enjiy with family, then you choose the right and pocket friendly package.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHotelsBooking')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionLargePackage">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Package Description</h1>
+            <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Large Package</h1>
+                    <p class="detailed-view-card-description">
+                        Looking for a long break t stretch yourself be it alone or with a loved one, we got it all for you.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHotelsBooking')">
+                back
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
